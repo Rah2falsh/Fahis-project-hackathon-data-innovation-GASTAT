@@ -8,8 +8,8 @@ The project aims to proactively elevate national statistical data quality, elimi
 ---
 
 ## Tech Stack & Toolbelt
-* **Core Language:** Python
-* **User Interface:** Gradio (For building responsive, interactive real-time validation forms and batch uploads)
+* **Frontend UI:** HTML5, CSS3, JavaScript (For building dynamic forms, interactive real-time validation, and field highlighting)
+* **Core Language & Backend:** Python (FastAPI / Web Server Framework)
 * **Data Processing:** Pandas, NumPy
 * **Semantic Analysis Model:** HuggingFace Transformers (paraphrase-multilingual-MiniLM-L12-v2)
 * **Explanation Generation:** Allam LLM (علاّم) by SDAIA / Tailored Prompt Templates
@@ -19,7 +19,7 @@ The project aims to proactively elevate national statistical data quality, elimi
 
 ## Core Features & Outputs
 For every survey validated, Fahes dynamically outputs four distinct, actionable metrics:
-1. **Field Highlighting:** Immediate red-highlighting of erroneous fields within the UI during data entry or batch parsing.
+1. **Field Highlighting:** Immediate red-highlighting of erroneous fields within the HTML UI during data entry or batch parsing.
 2. **Confidence Score:** A weighted mathematical metric between 0 and 1 representing the overall reliability and truthfulness of the entered row data.
 3. **Error Classification:** Categorizing the bug type (e.g., Pure Logical Contradiction vs. Deep Semantic Inconsistency).
 4. **Human-Readable Explanation:** Plain, contextual Arabic text generated to explain why the data fields contradict each other, enabling instant user correction.
@@ -39,7 +39,7 @@ The project was successfully built and integrated through the collaboration of t
 
 * **Eng. Rahaf Al-Shammari**
   * *Role:* Software Engineer
-  * *Responsibility:* Architected the full-stack system integration, engineered the dynamic UI dashboards using Gradio, and orchestrated the end-to-end component data flow.
+  * *Responsibility:* Architected the full-stack system integration, developed the responsive web interface using HTML, and orchestrated the end-to-end component data flow between the frontend and the backend.
 
 * **Leen Al-Masri**
   * *Role:* Data Architect (Computer Science)
